@@ -61,13 +61,14 @@
       font-size: 1.1rem;
       box-shadow: 0 2px 8px 0 rgba(79, 140, 255, 0.12);
       transition: background 0.2s;
+      margin: 0 8px; /* 버튼 사이 간격 추가 */
     }
     .link-btn:hover, .link-btn:focus {
       background: #357ae8;
     }
     @media (max-width: 600px) {
       h1 { font-size: 2rem; }
-      .link-btn { font-size: 1rem; padding: 0.7em 1.2em; }
+      .link-btn { font-size: 1rem; padding: 0.7em 1.2em; margin: 0 4px; /* 모바일 간격 조절 */ }
       header, footer { padding: 18px 0; }
       main { padding: 16px; } /* Adjust padding for smaller screens */
       .school-image {
@@ -85,6 +86,13 @@
     <img src="학교사진.jpg" alt="성주여자고등학교 전경" class="school-image">
   </main>
   <footer>
+    <!-- 상담예약하기 버튼 추가 -->
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLScz5pUJToJWlDs6Kt8RG-BGMmGzGIR0sxxFf6CKbPFpYUhy5g/viewform?usp=dialog"
+      class="link-btn"
+      target="_blank"
+      rel="noopener"
+    >상담예약하기</a>
     <a
       href="https://script.google.com/macros/s/AKfycbzYTfewZVE_-cSy9sajqfrhFwvbTim-CGfvKrr5DV84PvYrZJ-BwCXDJyd4Dk5mgVoL/exec?page=check"
       class="link-btn"
