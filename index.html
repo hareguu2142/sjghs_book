@@ -33,6 +33,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      padding: 24px; /* Added padding to ensure image has some space */
+      box-sizing: border-box; /* Include padding in main's dimensions */
+    }
+    .school-image {
+      max-width: 100%; /* Allow image to take full width of its container if needed */
+      max-height: 75vh; /* Limit height to 75% of viewport height */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 12px; /* Soft rounded corners */
+      box-shadow: 0 8px 25px rgba(93, 108, 144, 0.15); /* Subtle shadow for depth */
+      object-fit: contain; /* Ensures the entire image is visible, scaled down if necessary */
     }
     footer {
       padding: 24px 0;
@@ -59,6 +69,11 @@
       h1 { font-size: 2rem; }
       .link-btn { font-size: 1rem; padding: 0.7em 1.2em; }
       header, footer { padding: 18px 0; }
+      main { padding: 16px; } /* Adjust padding for smaller screens */
+      .school-image {
+          max-height: 60vh; /* Adjust max height for smaller screens */
+          border-radius: 8px;
+      }
     }
   </style>
 </head>
@@ -67,7 +82,7 @@
     <h1>성주여자고등학교</h1>
   </header>
   <main>
-    <!-- 필요시 여기에 본문 내용 삽입 -->
+    <img src="학교사진.jpg" alt="성주여자고등학교 전경" class="school-image">
   </main>
   <footer>
     <a
