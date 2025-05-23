@@ -29,12 +29,14 @@
       letter-spacing: -0.02em;
     }
     main {
-      flex: 1;
+      /* flex: 1;  -- 이 속성을 제거하여 main 요소가 내용물(사진)의 높이에 맞춰지도록 합니다. */
       display: flex;
       align-items: center;
       justify-content: center;
       padding: 24px; /* Added padding to ensure image has some space */
       box-sizing: border-box; /* Include padding in main's dimensions */
+      margin-top: auto;    /* main 요소를 수직 중앙에 배치하기 위해 추가 */
+      margin-bottom: auto; /* main 요소를 수직 중앙에 배치하기 위해 추가 */
     }
     .school-image {
       max-width: 100%; /* Allow image to take full width of its container if needed */
